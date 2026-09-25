@@ -80,12 +80,12 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
             <div>
               <span className="font-mono text-[9px] text-[#5A6455] font-bold block uppercase tracking-widest mb-1">SPEED & SEO</span>
               <p className="text-xl font-serif font-light text-ink">Instant Loading Times</p>
-              <p className="text-[10px] text-ink/65 font-sans mt-0.5">Lightweight pages designed to capture mobile traffic and lift booking rates.</p>
+              <p className="text-xs font-semibold tracking-wider text-ink/65 font-sans mt-0.5">Lightweight pages designed to capture mobile traffic and lift booking rates.</p>
             </div>
             <div>
               <span className="font-mono text-[9px] text-[#5A6455] font-bold block uppercase tracking-widest mb-1">SIMPLE SETUP</span>
               <p className="text-xl font-serif font-light text-ink">Fast & Easy Launch</p>
-              <p className="text-[10px] text-ink/65 font-sans mt-0.5">Polished, reservation-ready pages with visual setup guides included.</p>
+              <p className="text-xs font-semibold tracking-wider text-ink/65 font-sans mt-0.5">Polished, reservation-ready pages with visual setup guides included.</p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
       <div className="mb-16 md:mb-24 border-b border-ink/10 pb-16">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-4">
           <div>
-            <span className="text-[10px] tracking-[0.25em] text-[#C4A482] font-semibold uppercase block mb-1">
+            <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#C4A482] font-semibold uppercase block mb-1">
               TAILORED FOR BOUTIQUE PROGRAMS
             </span>
             <h2 className="font-serif text-3xl font-light text-ink">
@@ -189,7 +189,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
               </p>
 
               <p className="text-xs italic text-ink/65 font-serif border-l border-ochre/40 pl-4 py-1 mb-8">
-                &ldquo;{featuredRetreat.quote.text}&rdquo; <span className="block text-[10px] uppercase tracking-wider font-sans font-semibold text-ink/85 mt-1.5">— {featuredRetreat.quote.author}</span>
+                &ldquo;{featuredRetreat.quote.text}&rdquo; <span className="block text-xs font-semibold tracking-wider uppercase tracking-wider font-sans font-semibold text-ink/85 mt-1.5">— {featuredRetreat.quote.author}</span>
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center gap-6">
@@ -215,13 +215,13 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
       <div className="my-20 md:my-32 border-t border-ink/10 pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-8">
           <div className="lg:col-span-8">
-            <span className="text-[10px] tracking-[0.25em] font-mono text-[#5A6455] uppercase font-bold block mb-2">HIGH-QUALITY IMAGERY</span>
+            <span className="text-xs font-semibold tracking-wider tracking-[0.25em] font-mono text-[#5A6455] uppercase font-bold block mb-2">HIGH-QUALITY IMAGERY</span>
             <h4 className="font-serif text-3xl font-light text-ink leading-tight max-w-xl">
               Clean, immersive visuals curated for <span className="italic">an editorial, premium brand feel.</span>
             </h4>
           </div>
           <div className="lg:col-span-4 text-left lg:text-right">
-            <p className="text-[10px] text-ochre font-mono tracking-widest uppercase font-bold">EDITABLE PHOTO GALLERY</p>
+            <p className="text-xs font-semibold tracking-wider text-ochre font-mono tracking-widest uppercase font-bold">EDITABLE PHOTO GALLERY</p>
             <p className="text-xs text-ink/60 font-sans mt-1">Stunning display layouts / Simple photograph updates</p>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
       {/* 2. Platform Deliverables & Storefront Benefits */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 my-20 md:my-28 border-b border-ink/10 pb-16">
         <div className="lg:col-span-4 space-y-4">
-          <span className="text-[10px] tracking-[0.25em] font-mono text-[#C4A482] uppercase font-bold block">WHY CLIENTS CHOOSE IT</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] font-mono text-[#C4A482] uppercase font-bold block">WHY CLIENTS CHOOSE IT</span>
           <h4 className="font-serif text-2xl lg:text-3xl font-light text-ink leading-tight">
             Built for <span className="italic">Retreat Hosts & Programs</span>
           </h4>
@@ -317,7 +317,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
 
               {/* Text info */}
               <div className="flex-1 flex flex-col">
-                <div className="flex items-center space-x-1.5 text-[10px] text-sage font-mono uppercase tracking-widest mb-2 flex-wrap gap-y-1">
+                <div className="flex items-center space-x-1.5 text-xs font-semibold tracking-wider text-sage font-mono uppercase tracking-widest mb-2 flex-wrap gap-y-1">
                   <MapPin size={10} />
                   <span>{retreat.location}</span>
                   <span>•</span>
@@ -330,7 +330,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
                   {retreat.title}
                 </h4>
 
-                <p className="text-[10px] uppercase tracking-widest text-[#C4A482] font-semibold mt-1 mb-4">
+                <p className="text-xs font-semibold tracking-wider uppercase tracking-widest text-[#C4A482] font-semibold mt-1 mb-4">
                   {retreat.subtitle}
                 </p>
 
@@ -341,11 +341,11 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
                 <div className="mt-auto pt-4 border-t border-ink/10 flex items-center justify-between">
                   <button 
                     onClick={() => handleViewRetreat(retreat)}
-                    className="text-[10px] uppercase tracking-[0.18em] text-ink hover:text-ochre font-bold border-b border-ink/10 hover:border-ochre/40 pb-0.5 transition duration-300 cursor-pointer"
+                    className="text-xs font-semibold tracking-wider uppercase tracking-[0.18em] text-ink hover:text-ochre font-bold border-b border-ink/10 hover:border-ochre/40 pb-0.5 transition duration-300 cursor-pointer"
                   >
                     Explore lodging details →
                   </button>
-                  <span className="text-[10px] text-[#5A6455] font-mono tracking-widest bg-[#5A6455]/10 px-2 py-0.5 rounded-sm">
+                  <span className="text-xs font-semibold tracking-wider text-[#5A6455] font-mono tracking-widest bg-[#5A6455]/10 px-2 py-0.5 rounded-sm">
                     Spots Left: {retreat.accommodations.reduce((acc, tier) => acc + tier.spotsRemaining, 0)}
                   </span>
                 </div>
@@ -361,7 +361,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
           
           {/* Customization Made Simple */}
           <div className="space-y-6">
-            <span className="text-[10px] tracking-[0.25em] font-mono text-[#5A6455] uppercase font-bold block">SIMPLE UPDATES</span>
+            <span className="text-xs font-semibold tracking-wider tracking-[0.25em] font-mono text-[#5A6455] uppercase font-bold block">SIMPLE UPDATES</span>
             <h3 className="font-serif text-3xl font-light text-ink leading-tight">
               Customization <span className="italic">Made Simple</span>
             </h3>
@@ -370,8 +370,8 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
             </p>
             
             {/* Visual Config Snippet placeholder */}
-            <div className="bg-[#1A1A1A] p-5 rounded-sm font-mono text-[11px] text-zinc-300 leading-relaxed shadow-md border border-neutral-800">
-              <div className="flex justify-between items-center text-zinc-500 border-b border-zinc-800 pb-2 mb-3 text-[10px]">
+            <div className="bg-[#1A1A1A] p-5 rounded-sm font-mono text-xs font-semibold text-zinc-300 leading-relaxed shadow-md border border-neutral-800">
+              <div className="flex justify-between items-center text-zinc-300 border-b border-zinc-800 pb-2 mb-3 text-xs font-semibold tracking-wider">
                 <span>website-details.txt</span>
                 <span className="text-ochre">SIMPLE CONTENT FILE</span>
               </div>
@@ -385,7 +385,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
           {/* What's Included */}
           <div className="space-y-6 flex flex-col justify-between">
             <div>
-              <span className="text-[10px] tracking-[0.25em] font-mono text-ochre uppercase font-bold block">INCLUDED FEATURES</span>
+              <span className="text-xs font-semibold tracking-wider tracking-[0.25em] font-mono text-ochre uppercase font-bold block">INCLUDED FEATURES</span>
               <h3 className="font-serif text-2xl font-light text-ink leading-tight mb-6">
                 What's <span className="italic">Included</span>
               </h3>
@@ -431,7 +431,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
         {/* Best For / Not For (Side-by-Side Dual Lists with beautiful background) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16 p-8 border border-ink/10 bg-[#FBF9F6]/60 rounded-sm">
           <div className="space-y-4">
-            <span className="text-[10px] tracking-[0.2em] font-mono text-[#5A6455] uppercase font-bold flex items-center gap-1.5">
+            <span className="text-xs font-semibold tracking-wider tracking-[0.2em] font-mono text-[#5A6455] uppercase font-bold flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-700" /> PERFECT FOR
             </span>
             <ul className="space-y-2.5 text-xs text-ink/80 font-sans">
@@ -451,7 +451,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
           </div>
 
           <div className="space-y-4 border-t md:border-t-0 md:border-l border-ink/10 pt-6 md:pt-0 md:pl-8">
-            <span className="text-[10px] tracking-[0.2em] font-mono text-ochre uppercase font-bold flex items-center gap-1.5">
+            <span className="text-xs font-semibold tracking-wider tracking-[0.2em] font-mono text-ochre uppercase font-bold flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-ochre" /> NOT DESIGNED FOR
             </span>
             <ul className="space-y-2.5 text-xs text-ink/70 font-sans">
@@ -474,7 +474,7 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
         {/* Buyer FAQ Section */}
         <div className="space-y-8 my-16">
           <div className="text-center md:text-left">
-            <span className="text-[10px] tracking-[0.25em] font-mono text-[#5A6455] uppercase font-bold block mb-1">
+            <span className="text-xs font-semibold tracking-wider tracking-[0.25em] font-mono text-[#5A6455] uppercase font-bold block mb-1">
               RECURRING QUESTIONS
             </span>
             <h3 className="font-serif text-2xl font-light text-ink">
@@ -517,19 +517,19 @@ export default function Portfolio({ retreats, onSelectRetreat, setCurrentTab }: 
       {/* Extra magazine-style details to showcase premium branding */}
       <footer className="mt-20 border-t border-ink/15 pt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-3">01 / CONVERSION DRIVEN</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-3">01 / CONVERSION DRIVEN</span>
           <p className="text-xs text-ink/75 leading-relaxed font-sans">
             Built to capture high-value leads with elegant intake friction, qualifying serious applicants only for exclusive high-ticket events.
           </p>
         </div>
         <div>
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-3">02 / EASY COMPATIBILITY</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-3">02 / EASY COMPATIBILITY</span>
           <p className="text-xs text-ink/75 leading-relaxed font-sans">
             Lodging choices automatically update remaining spots based on registrations, preventing booking errors or manual tracking conflicts.
           </p>
         </div>
         <div>
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-3">03 / FAST LAUNCH</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-3">03 / FAST LAUNCH</span>
           <p className="text-xs text-[#C4A482] leading-relaxed font-sans font-medium">
             Standalone and ultra-fast. Launch and host your customized website with our simple launch guide in less than five minutes.
           </p>

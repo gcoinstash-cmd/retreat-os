@@ -27,7 +27,7 @@ export default function Header({ currentTab, setCurrentTab, appCount, openHostDa
         </div>
 
         {/* Center: Editorial navigation */}
-        <nav className="hidden md:flex items-center space-x-10 text-[11px] uppercase tracking-[0.2em] font-medium text-ink/75">
+        <nav className="hidden md:flex items-center space-x-10 text-xs font-semibold uppercase tracking-[0.2em] font-medium text-ink/75">
           <button
             onClick={() => setCurrentTab('portfolio')}
             className={`hover:text-ink transition relative py-1 cursor-pointer ${
@@ -71,7 +71,7 @@ export default function Header({ currentTab, setCurrentTab, appCount, openHostDa
             <button
               onClick={openHostDashboard}
               aria-label="View submitted applications"
-              className="group hidden sm:flex items-center space-x-2 text-[10px] uppercase tracking-widest text-[#C4A482] bg-[#C4A482]/5 hover:bg-[#C4A482]/10 border border-[#C4A482]/25 px-3 py-1.5 rounded transition duration-200 cursor-pointer"
+              className="group hidden sm:flex items-center space-x-2 text-base font-semibold min-h-[44px] font-semibold tracking-wider uppercase tracking-widest text-[#C4A482] bg-[#C4A482]/5 hover:bg-[#C4A482]/10 border border-[#C4A482]/25 px-3 py-1.5 rounded transition duration-200 cursor-pointer"
             >
               <FileText size={12} className="text-ochre animate-pulse" />
               <span>[ {appCount} APPLICATION{appCount > 1 ? 'S' : ''} ]</span>
@@ -81,7 +81,7 @@ export default function Header({ currentTab, setCurrentTab, appCount, openHostDa
           {onOpenAdminPass && (
             <button
               onClick={onOpenAdminPass}
-              className="hidden sm:flex items-center space-x-1.5 text-[10px] uppercase font-mono tracking-widest text-[#5A6455] hover:text-ink border border-ink/20 hover:border-ink/40 bg-white/60 px-3 py-2 transition duration-200 cursor-pointer font-bold"
+              className="hidden sm:flex items-center space-x-1.5 text-base font-semibold min-h-[44px] font-semibold tracking-wider uppercase font-mono tracking-widest text-[#5A6455] hover:text-ink border border-ink/20 hover:border-ink/40 bg-white/60 px-3 py-2 transition duration-200 cursor-pointer font-bold"
             >
               <Sparkles size={12} className="text-ochre" />
               <span>ADMIN PASS</span>
@@ -90,7 +90,7 @@ export default function Header({ currentTab, setCurrentTab, appCount, openHostDa
 
           <button
             onClick={() => setCurrentTab('apply')}
-            className="bg-ink hover:bg-[#5A6455] text-alabaster hover:text-white text-[11px] uppercase tracking-[0.2em] font-medium px-5 py-2.5 transition duration-300 hover:shadow-sm cursor-pointer"
+            className="bg-ink hover:bg-[#5A6455] text-alabaster hover:text-white text-xs font-semibold uppercase tracking-[0.2em] font-medium px-5 py-2.5 transition duration-300 hover:shadow-sm cursor-pointer"
           >
             Apply to Cohort
           </button>

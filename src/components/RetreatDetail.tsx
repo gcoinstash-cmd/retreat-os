@@ -41,7 +41,7 @@ export default function RetreatDetail({
       {/* Top Selector / Ribbon allowing switching between retreats to test the system design */}
       <div className="bg-white/40 border border-ink/10 pb-6 mb-12 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-sm shadow-xs">
         <div>
-          <span className="text-[10px] tracking-[0.25em] text-ochre font-bold uppercase block mb-1">
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-ochre font-bold uppercase block mb-1">
             PREVIEW ALTERNATIVE PROGRAMS:
           </span>
           <p className="text-xs text-ink/60 font-sans">
@@ -88,7 +88,7 @@ export default function RetreatDetail({
         <div className="lg:col-span-4 lg:text-right border-l lg:border-l-0 lg:border-r border-ochre/30 pl-4 lg:pl-0 lg:pr-4 py-1">
           <p className="text-xs uppercase tracking-widest text-[#C4A482]/50 font-bold mb-1">DURATION & TUITION</p>
           <p className="font-serif text-2xl text-ink italic font-normal">{currentRetreat.durationDays}-Day Workshop</p>
-          <p className="text-[10px] text-ochre tracking-wider font-mono mt-1 font-bold">From ${Math.min(...currentRetreat.accommodations.map(a => a.price))} USD — All-Inclusive</p>
+          <p className="text-xs font-semibold tracking-wider text-ochre tracking-wider font-mono mt-1 font-bold">From ${Math.min(...currentRetreat.accommodations.map(a => a.price))} USD — All-Inclusive</p>
         </div>
       </div>
 
@@ -132,7 +132,7 @@ export default function RetreatDetail({
               alt={currentRetreat.title} 
               className="w-full aspect-[4/3] object-cover filter grayscale brightness-[0.98] contrast-[1.01] hover:grayscale-0 transition duration-700"
             />
-            <div className="pt-4 flex items-center justify-between text-[10px] tracking-widest font-mono text-[#C4A482] font-semibold uppercase">
+            <div className="pt-4 flex items-center justify-between text-xs font-semibold tracking-wider tracking-widest font-mono text-[#C4A482] font-semibold uppercase">
               <span>ESTABLISHED 2026</span>
               <span>LOCKED DESIGN SYSTEM</span>
             </div>
@@ -143,7 +143,7 @@ export default function RetreatDetail({
       {/* SECTION 1: THE INTERACTIVE TIMELINE / DAILY TIMELINE */}
       <div className="mb-20 md:mb-32">
         <div className="border-b border-ink/15 pb-6 mb-10">
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">01 / PROGRAM SCHEDULE & ITINERARY</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">01 / PROGRAM SCHEDULE & ITINERARY</span>
           <h2 className="font-serif text-3xl font-light tracking-tight text-ink">The Daily Itinerary <span className="italic">Timeline</span></h2>
           <p className="text-xs text-ink/60 mt-2 font-sans tracking-wide">
             Click on any day below to expand the scheduled block and view hourly session focuses.
@@ -172,7 +172,7 @@ export default function RetreatDetail({
                       <h3 className="text-sm font-bold uppercase tracking-wider text-ink">
                         {day.dayTitle}
                       </h3>
-                      <p className="text-[11px] text-[#5A6455] font-sans tracking-semibold font-semibold h-4 leading-4 mt-0.5">
+                      <p className="text-xs font-semibold text-[#5A6455] font-sans tracking-semibold font-semibold h-4 leading-4 mt-0.5">
                         Focus: {day.focus}
                       </p>
                     </div>
@@ -227,7 +227,7 @@ export default function RetreatDetail({
       {/* SECTION 2: COMPARISON MATRIX (Included vs. Not Included) */}
       <div className="mb-20 md:mb-32">
         <div className="border-b border-ink/15 pb-6 mb-10">
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">02 / BILLING TRANSPARENCY</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">02 / BILLING TRANSPARENCY</span>
           <h2 className="font-serif text-3xl font-light tracking-tight text-ink">The Inclusions <span className="italic">Overview</span></h2>
           <p className="text-xs text-ink/65 mt-2 font-sans tracking-wide">
             Completely transparent fees. Clear division of program responsibilities.
@@ -272,7 +272,7 @@ export default function RetreatDetail({
       {/* SECTION 3: MULTI-TIER ACCOMMODATIONS GRID (Asymmetric Cards) */}
       <div>
         <div className="border-b border-ink/15 pb-6 mb-10">
-          <span className="text-[10px] tracking-[0.25em] text-ochre font-bold uppercase block mb-1">03 / Accommodation Details</span>
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-ochre font-bold uppercase block mb-1">03 / Accommodation Details</span>
           <h2 className="font-serif text-3xl font-light tracking-tight text-ink">Available Lodging <span className="italic">& Rates</span></h2>
           <p className="text-xs text-ink/65 mt-2 font-sans tracking-wide">
             Carefully designed rooms mapped with real spot availability indicators. Select an option below to hold your rate and proceed to application.
@@ -325,10 +325,10 @@ export default function RetreatDetail({
 
                   {/* Amenities */}
                   <div className="mb-6">
-                    <h4 className="text-[10px] uppercase tracking-widest font-bold text-[#5A6455] mb-3">Suite Amenities</h4>
+                    <h4 className="text-xs font-semibold tracking-wider uppercase tracking-widest font-bold text-[#5A6455] mb-3">Suite Amenities</h4>
                     <ul className="space-y-1.5 grid grid-cols-1 sm:grid-cols-2 gap-x-4">
                       {tier.amenities.map((amenity, i) => (
-                        <li key={i} className="flex gap-2 items-start text-[10px] text-ink/75 font-sans">
+                        <li key={i} className="flex gap-2 items-start text-xs font-semibold tracking-wider text-ink/75 font-sans">
                           <Check size={10} className="text-[#5A6455] mt-0.5" />
                           <span>{amenity}</span>
                         </li>
@@ -339,7 +339,7 @@ export default function RetreatDetail({
 
                 <div className="pt-4 border-t border-ink/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-auto w-full">
                   {/* Payment plan detail */}
-                  <div className="flex items-center space-x-2 text-[10px] font-mono tracking-wider text-ochre">
+                  <div className="flex items-center space-x-2 text-xs font-semibold tracking-wider font-mono tracking-wider text-ochre">
                      <Landmark size={12} className="text-ochre" />
                     <span>PLANS FROM {tier.paymentPlan}</span>
                   </div>
@@ -351,7 +351,7 @@ export default function RetreatDetail({
                       selectLodgingAndApply(tier);
                     }}
                     disabled={!hasSpots}
-                    className={`w-full sm:w-auto text-center px-5 py-2.5 text-[10px] uppercase font-bold tracking-widest border transition duration-300 cursor-pointer rounded-sm ${
+                    className={`w-full sm:w-auto text-center px-5 py-2.5 text-xs font-semibold tracking-wider uppercase font-bold tracking-widest border transition duration-300 cursor-pointer rounded-sm ${
                       hasSpots 
                         ? 'bg-ink border-ink hover:bg-[#5A6455] text-alabaster font-bold hover:text-white'
                         : 'bg-ink/5 border-ink/5 text-ink/30 cursor-not-allowed'

@@ -57,7 +57,7 @@ export default function PastContainers() {
       {/* Title Header */}
       <div className="flex flex-col md:flex-row items-start md:items-end justify-between pb-8 border-b border-ink/10 mb-10 gap-4">
         <div>
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">
             05 / Past retreats
           </span>
           <h2 className="font-serif text-3xl font-light tracking-tight text-ink">
@@ -105,7 +105,7 @@ export default function PastContainers() {
               <h3 className="font-serif text-xl font-light text-ink tracking-tight mb-2 group-hover:text-ochre transition duration-300">
                 {rec.title}
               </h3>
-              <p className="text-[10px] font-sans font-semibold text-[#5A6455] uppercase tracking-widest mb-3.5 italic">
+              <p className="text-xs font-semibold tracking-wider font-sans font-semibold text-[#5A6455] uppercase tracking-widest mb-3.5 italic">
                 {rec.tagline}
               </p>
               <div className="h-[1px] bg-ink/10 w-12 mb-3.5" />

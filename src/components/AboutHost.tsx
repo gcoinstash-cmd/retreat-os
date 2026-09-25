@@ -58,7 +58,7 @@ export default function AboutHost({ currentRetreat, allRetreats, onSelectRetreat
             <button
               key={r.id}
               onClick={() => setActiveHostRetreatId(r.id)}
-              className={`px-4 py-2 border text-[10px] uppercase tracking-widest font-bold transition duration-300 rounded-sm cursor-pointer ${
+              className={`px-4 py-2 border text-xs font-semibold tracking-wider uppercase tracking-widest font-bold transition duration-300 rounded-sm cursor-pointer ${
                 activeHostRetreatId === r.id
                   ? 'bg-ink border-ink text-alabaster font-bold'
                   : 'bg-white/40 border-ink/15 hover:border-ink/50 text-ink/80'
@@ -91,7 +91,7 @@ export default function AboutHost({ currentRetreat, allRetreats, onSelectRetreat
                   className="w-full aspect-[4/5] object-cover filter grayscale hover:grayscale-0 transition duration-700"
                 />
               </div>
-              <div className="absolute bottom-6 right-6 bg-[#FBF9F6] border border-ink/10 px-4 py-2 text-[10px] font-mono tracking-widest text-[#C4A482] font-semibold uppercase">
+              <div className="absolute bottom-6 right-6 bg-[#FBF9F6] border border-ink/10 px-4 py-2 text-xs font-semibold tracking-wider font-mono tracking-widest text-[#C4A482] font-semibold uppercase">
                 {host.role}
               </div>
             </div>
@@ -101,13 +101,13 @@ export default function AboutHost({ currentRetreat, allRetreats, onSelectRetreat
               <div className="flex items-start space-x-3">
                 <GraduationCap className="text-ochre shrink-0 mt-0.5" size={18} />
                 <div>
-                  <h4 className="text-[11px] uppercase tracking-widest font-bold text-ink">
+                  <h4 className="text-xs font-semibold uppercase tracking-widest font-bold text-ink">
                     Verified Background & Accreditations
                   </h4>
                   <p className="text-xs text-ink/75 leading-relaxed font-sans mt-2">
                     {host.lineage}
                   </p>
-                  <p className="text-[10px] font-mono text-[#5A6455] mt-3 uppercase tracking-widest font-bold">
+                  <p className="text-xs font-semibold tracking-wider font-mono text-[#5A6455] mt-3 uppercase tracking-widest font-bold">
                     ✓ Verified Template Instructor
                   </p>
                 </div>
@@ -119,7 +119,7 @@ export default function AboutHost({ currentRetreat, allRetreats, onSelectRetreat
           <div className="lg:col-span-7 space-y-10">
             {/* Host Name Intro */}
             <div>
-              <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-ochre">[ PROGRAM DIRECTOR ]</span>
+              <span className="text-xs font-semibold tracking-wider tracking-[0.2em] uppercase font-bold text-ochre">[ PROGRAM DIRECTOR ]</span>
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-ink tracking-tight mt-1 mb-6">
                 {host.name}
               </h2>
@@ -172,7 +172,7 @@ export default function AboutHost({ currentRetreat, allRetreats, onSelectRetreat
                   setCurrentTab('apply');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="bg-ink hover:bg-[#5A6455] text-alabaster hover:text-white text-[10px] uppercase tracking-widest font-bold py-2.5 px-4 transition duration-300 cursor-pointer"
+                className="bg-ink hover:bg-[#5A6455] text-alabaster hover:text-white text-xs font-semibold tracking-wider uppercase tracking-widest font-bold py-2.5 px-4 transition duration-300 cursor-pointer"
               >
                 Inquire via Application Form
               </button>

@@ -103,7 +103,7 @@ export default function PackingMatrix({ currentRetreat }: PackingMatrixProps) {
     <div className="border border-ink/10 bg-white/40 p-6 md:p-10 rounded-sm shadow-xs" id="packing-matrix">
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 pb-6 border-b border-ink/10 mb-8">
         <div className="max-w-xl">
-          <span className="text-[10px] tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">
+          <span className="text-xs font-semibold tracking-wider tracking-[0.25em] text-[#5A6455] font-bold uppercase block mb-1">
             04 / PREPARATION & PACKING
           </span>
           <h2 className="font-serif text-3xl font-light tracking-tight text-ink">
@@ -117,7 +117,7 @@ export default function PackingMatrix({ currentRetreat }: PackingMatrixProps) {
         {/* Dynamic Directive Quote Badge */}
         <div className="bg-white/60 border border-ink/5 p-4 rounded-xs shrink-0 max-w-xs shadow-xs">
           <span className="text-[9px] font-mono tracking-widest text-[#5A6455] font-bold uppercase block mb-1.5">[ Host Note ]</span>
-          <p className="text-[11px] text-[#1A1A1A] italic leading-relaxed font-sans">
+          <p className="text-xs font-semibold text-[#1A1A1A] italic leading-relaxed font-sans">
             &ldquo;{activeData.philosophicalNote}&rdquo;
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function PackingMatrix({ currentRetreat }: PackingMatrixProps) {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex items-center gap-2 px-4 py-3 text-[10px] uppercase font-bold tracking-widest border transition duration-300 whitespace-nowrap cursor-pointer rounded-t-sm ${
+              className={`flex items-center gap-2 px-4 py-3 text-xs font-semibold tracking-wider uppercase font-bold tracking-widest border transition duration-300 whitespace-nowrap cursor-pointer rounded-t-sm ${
                 isActive
                   ? 'bg-[#FBF9F6] border-ink/15 border-b-transparent text-ink -mb-[1px]'
                   : 'bg-transparent border-transparent hover:border-ink/5 text-ink/50 hover:text-ink/80'

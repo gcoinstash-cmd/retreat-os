@@ -39,7 +39,7 @@ export default function HostPreview({
           <div>
             <div className="flex items-center space-x-2">
               <span className="h-2 w-2 rounded-full bg-ochre animate-pulse" />
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5A6455] font-bold">
+              <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-[#5A6455] font-bold">
                 [ DEMO INSPECTOR MODE ]
               </span>
             </div>
@@ -79,7 +79,7 @@ export default function HostPreview({
               <div className="text-center py-12 px-4 border border-dashed border-ink/20 rounded-sm bg-white/40">
                 <FileText size={24} className="mx-auto text-ink/20 mb-2" />
                 <p className="font-serif text-sm italic text-ink/65">No applications currently registered</p>
-                <p className="text-[10px] text-ink/50 font-sans mt-1">Submit an application on the portal tab first to see how it registers here.</p>
+                <p className="text-xs font-semibold tracking-wider text-ink/50 font-sans mt-1">Submit an application on the portal tab first to see how it registers here.</p>
               </div>
             ) : (
               applications.map((app) => (
@@ -96,7 +96,7 @@ export default function HostPreview({
                     <h4 className="text-xs font-bold uppercase tracking-wider text-ink truncate font-semibold">
                       {app.fullName}
                     </h4>
-                    <p className="text-[10px] text-ochre font-mono mt-0.5 truncate font-bold">{app.retreatTitle}</p>
+                    <p className="text-xs font-semibold tracking-wider text-ochre font-mono mt-0.5 truncate font-bold">{app.retreatTitle}</p>
                     <span className="text-[9px] text-ink/50 block mt-1 font-medium">
                       {new Date(app.submittedAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                     </span>
@@ -133,7 +133,7 @@ export default function HostPreview({
                       Selected retreat: {currentApp.retreatTitle} ({currentApp.tierName})
                     </p>
                   </div>
-                  <span className="text-[10px] text-ink/50 font-mono shrink-0 font-bold">
+                  <span className="text-xs font-semibold tracking-wider text-ink/50 font-mono shrink-0 font-bold">
                     {new Date(currentApp.submittedAt).toLocaleDateString()}
                   </span>
                 </div>
@@ -165,7 +165,7 @@ export default function HostPreview({
                 {/* Registration Essay answers */}
                 <div className="space-y-4">
                   <div>
-                    <span className="text-[10px] uppercase tracking-widest text-[#5A6455] font-bold block border-l-2 border-ochre pl-2 mb-2">
+                    <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-[#5A6455] font-bold block border-l-2 border-ochre pl-2 mb-2">
                       Application Intent
                     </span>
                     <p className="text-xs text-ink/85 font-sans leading-relaxed p-3 bg-white rounded-sm italic border border-ink/5 shadow-xs">
@@ -175,7 +175,7 @@ export default function HostPreview({
 
                   {currentApp.experienceText && (
                     <div>
-                      <span className="text-[10px] uppercase tracking-widest text-[#5A6455] font-bold block border-l-2 border-ochre pl-2 mb-2">
+                      <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-[#5A6455] font-bold block border-l-2 border-ochre pl-2 mb-2">
                         Relevant Experience
                       </span>
                       <p className="text-xs text-ink/85 font-sans leading-relaxed p-3 bg-white rounded-sm border border-ink/5 shadow-xs">
@@ -219,7 +219,7 @@ export default function HostPreview({
                         setSelectedAppId(null);
                       }
                     }}
-                    className="flex items-center space-x-1.5 text-red-600 hover:text-red-800 text-[10px] font-bold uppercase tracking-wider cursor-pointer"
+                    className="flex items-center space-x-1.5 text-red-600 hover:text-red-800 text-xs font-semibold tracking-wider font-bold uppercase tracking-wider cursor-pointer"
                   >
                     <Trash2 size={12} />
                     <span>Delete Record</span>

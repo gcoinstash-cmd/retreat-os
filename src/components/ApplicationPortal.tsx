@@ -119,7 +119,7 @@ export default function ApplicationPortal({
                 onClick={() => handleStepTransition(1)}
                 className={`transition-all duration-300 cursor-pointer ${activeStep === 1 ? 'opacity-100 font-bold border-l-2 border-ochre pl-3' : 'opacity-40 hover:opacity-75 pl-3 border-l-2 border-transparent'}`}
               >
-                <span className="text-[10px] uppercase font-mono tracking-widest text-[#5A6455] block font-bold">STEP 01</span>
+                <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-[#5A6455] block font-bold">STEP 01</span>
                 <span className="text-xs text-ink/90 font-sans tracking-wide">Contact Details</span>
               </button>
 
@@ -128,7 +128,7 @@ export default function ApplicationPortal({
                 disabled={!fullName || !email || !phone}
                 className={`transition-all duration-300 cursor-pointer disabled:opacity-30 ${activeStep === 2 ? 'opacity-100 font-bold border-l-2 border-ochre pl-3' : 'opacity-40 hover:opacity-75 pl-3 border-l-2 border-transparent'}`}
               >
-                <span className="text-[10px] uppercase font-mono tracking-widest text-[#5A6455] block font-bold">STEP 02</span>
+                <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-[#5A6455] block font-bold">STEP 02</span>
                 <span className="text-xs text-ink/90 font-sans tracking-wide">Application details</span>
               </button>
 
@@ -137,7 +137,7 @@ export default function ApplicationPortal({
                 disabled={!fullName || !email || !phone || !intentText}
                 className={`transition-all duration-300 cursor-pointer disabled:opacity-30 ${activeStep === 3 ? 'opacity-100 font-bold border-l-2 border-ochre pl-3' : 'opacity-40 hover:opacity-75 pl-3 border-l-2 border-transparent'}`}
               >
-                <span className="text-[10px] uppercase font-mono tracking-widest text-[#5A6455] block font-bold">STEP 03</span>
+                <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-[#5A6455] block font-bold">STEP 03</span>
                 <span className="text-xs text-ink/90 font-sans tracking-wide">Review Details</span>
               </button>
             </div>
@@ -154,7 +154,7 @@ export default function ApplicationPortal({
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                      <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                         Full name <span className="text-ochre">*</span>
                       </label>
                       <input
@@ -167,7 +167,7 @@ export default function ApplicationPortal({
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                      <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                         Email address <span className="text-ochre">*</span>
                       </label>
                       <input
@@ -183,7 +183,7 @@ export default function ApplicationPortal({
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                      <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                         Mobile Phone Number <span className="text-ochre">*</span>
                       </label>
                       <input
@@ -196,7 +196,7 @@ export default function ApplicationPortal({
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                      <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                         Social Profile Link <span className="text-ink/40">(Optional)</span>
                       </label>
                       <input
@@ -210,7 +210,7 @@ export default function ApplicationPortal({
                   </div>
 
                   <div>
-                    <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                    <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                       Dietary or accessibility needs <span className="text-ink/40">(Optional)</span>
                     </label>
                     <textarea
@@ -242,10 +242,10 @@ export default function ApplicationPortal({
                   className="space-y-6"
                 >
                   <div>
-                    <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                    <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                       1. Application Intent <span className="text-ochre">*</span>
                     </label>
-                    <p className="text-[11px] text-ink/50 mb-3 block leading-relaxed">
+                    <p className="text-xs font-semibold text-ink/50 mb-3 block leading-relaxed">
                       What is your motivation for participating in this program, and what core milestones or outcomes do you wish to achieve?
                     </p>
                     <textarea
@@ -259,10 +259,10 @@ export default function ApplicationPortal({
                   </div>
 
                   <div>
-                    <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
+                    <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-bold mb-2">
                       2. Relevant Background & Experience <span className="text-ink/40">(Optional)</span>
                     </label>
-                    <p className="text-[11px] text-ink/50 mb-3 block leading-relaxed">
+                    <p className="text-xs font-semibold text-ink/50 mb-3 block leading-relaxed">
                       Briefly describe any related workshops, physical development training, or design seminars you have attended.
                     </p>
                     <textarea
@@ -303,7 +303,7 @@ export default function ApplicationPortal({
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Choose programmatic location */}
                     <div>
-                      <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-semibold mb-2">
+                      <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-semibold mb-2">
                         Select retreat
                       </label>
                       <select
@@ -331,7 +331,7 @@ export default function ApplicationPortal({
 
                     {/* Choose Accommodation tier */}
                     <div>
-                      <label className="block text-[10px] font-mono uppercase tracking-[0.18em] text-[#5A6455] font-semibold mb-2">
+                      <label className="block text-sm font-semibold tracking-wider font-mono uppercase tracking-[0.18em] text-[#5A6455] font-semibold mb-2">
                         Select accommodation
                       </label>
                       <select
@@ -353,7 +353,7 @@ export default function ApplicationPortal({
 
                   {/* Pricing Verification Summary Panel */}
                   <div className="border border-ink/15 bg-[#FBF9F6] p-6 rounded-sm shadow-xs space-y-4">
-                    <span className="text-[10px] font-mono text-[#5A6455] font-bold uppercase tracking-widest block border-b border-ink/10 pb-2">
+                    <span className="text-xs font-semibold tracking-wider font-mono text-[#5A6455] font-bold uppercase tracking-widest block border-b border-ink/10 pb-2">
                       Selected Accommodation Details
                     </span>
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -363,7 +363,7 @@ export default function ApplicationPortal({
                       </div>
                       <div className="text-left sm:text-right shrink-0">
                         <span className="font-serif text-2xl font-light text-[#5A6455]">${currentTier.price}</span>
-                        <span className="text-[10px] text-ink/50 uppercase block font-medium mt-0.5">{currentTier.paymentPlan}</span>
+                        <span className="text-xs font-semibold tracking-wider text-ink/50 uppercase block font-medium mt-0.5">{currentTier.paymentPlan}</span>
                       </div>
                     </div>
                   </div>
@@ -378,7 +378,7 @@ export default function ApplicationPortal({
                     </button>
                     <button
                       type="submit"
-                      className="bg-[#5A6455] hover:bg-ink text-white text-xs uppercase tracking-widest font-bold py-4 px-10 transition duration-300 rounded-sm cursor-pointer shadow-md inline-flex items-center space-x-2"
+                      className="bg-[#5A6455] hover:bg-ink text-white text-base font-semibold min-h-[44px] uppercase tracking-widest font-bold py-4 px-10 transition duration-300 rounded-sm cursor-pointer shadow-md inline-flex items-center space-x-2"
                     >
                       <Check size={14} />
                       <span>Submit Application</span>
@@ -401,7 +401,7 @@ export default function ApplicationPortal({
             </div>
 
             <div className="space-y-2">
-              <span className="text-[10px] tracking-[0.25em] font-mono text-[#5A6455] font-bold block uppercase">
+              <span className="text-xs font-semibold tracking-wider tracking-[0.25em] font-mono text-[#5A6455] font-bold block uppercase">
                 // APPLICATION SUBMITTED SUCCESSFULLY!
               </span>
               <h2 className="font-serif text-3xl font-light text-ink">
@@ -415,7 +415,7 @@ export default function ApplicationPortal({
 
             <div className="p-4 border border-[#C4A482]/20 bg-[#FBF9F6] rounded-sm text-left">
               <span className="text-[9px] font-mono text-[#C4A482] uppercase block mb-1">Host dashboard note</span>
-              <p className="text-[10px] text-ink/75 leading-relaxed font-sans">
+              <p className="text-xs font-semibold tracking-wider text-ink/75 leading-relaxed font-sans">
                 You can now expand the <strong className="text-ink">Applications</strong> panel at the top right of the navigation bar to inspect your newly registered details in the demo dashboard.
               </p>
             </div>
@@ -433,7 +433,7 @@ export default function ApplicationPortal({
                   setIsSubmitted(false);
                   setActiveStep(1);
                 }}
-                className="border border-ink/20 hover:border-ink/50 text-ink/80 hover:text-ink text-[10px] uppercase tracking-widest font-bold py-3.5 px-6 transition duration-300 rounded-sm cursor-pointer"
+                className="border border-ink/20 hover:border-ink/50 text-ink/80 hover:text-ink text-xs font-semibold tracking-wider uppercase tracking-widest font-bold py-3.5 px-6 transition duration-300 rounded-sm cursor-pointer"
               >
                 Submit another application
               </button>
@@ -442,7 +442,7 @@ export default function ApplicationPortal({
                   setCurrentTab('portfolio');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="bg-ink hover:bg-[#5A6455] text-alabaster hover:text-white text-[10px] uppercase tracking-[0.18em] font-bold py-3.5 px-6 transition duration-300 rounded-sm cursor-pointer"
+                className="bg-ink hover:bg-[#5A6455] text-alabaster hover:text-white text-xs font-semibold tracking-wider uppercase tracking-[0.18em] font-bold py-3.5 px-6 transition duration-300 rounded-sm cursor-pointer"
               >
                 Return to retreats
               </button>

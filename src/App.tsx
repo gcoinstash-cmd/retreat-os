@@ -250,21 +250,21 @@ export default function App() {
           <div className="w-full bg-[#FBF9F6] border border-ink/10 rounded-sm shadow-3xs p-8 text-left my-8">
             <div className="border-b border-ink/10 pb-6 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
               <div>
-                <span className="text-[10px] font-mono tracking-widest text-[#5A6455] font-bold uppercase block mb-1">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#5A6455] font-bold uppercase block mb-1">
                   // COMMERCIAL DESIGN SYSTEM BUILD
                 </span>
                 <h3 className="font-serif text-2xl font-light text-ink">
                   Retreat OS <span className="italic">Template Specifications</span>
                 </h3>
               </div>
-              <div className="text-[10px] font-mono text-ochre font-bold uppercase bg-[#C4A482]/5 border border-[#C4A482]/25 px-3 py-1 bg-white/50">
+              <div className="text-xs font-semibold tracking-wider font-mono text-ochre font-bold uppercase bg-[#C4A482]/5 border border-[#C4A482]/25 px-3 py-1 bg-white/50">
                 Setup & Support Included
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="space-y-3">
-                <span className="text-[10px] font-mono font-bold text-[#5A6455] block">// CORE FEATURE 01</span>
+                <span className="text-xs font-semibold tracking-wider font-mono font-bold text-[#5A6455] block">// CORE FEATURE 01</span>
                 <h4 className="font-serif text-lg font-light text-ink">Dynamic Room & Capacity Metrics</h4>
                 <p className="text-xs text-ink/70 leading-relaxed font-sans">
                   Prevents double-occupancy overcrowding. Built-in real-time reservation tickers link instantly to intake logic, mapping true room capacities dynamically to avoid manual overbooking.
@@ -272,7 +272,7 @@ export default function App() {
               </div>
 
               <div className="space-y-3 border-t md:border-t-0 md:border-l border-ink/10 pt-6 md:pt-0 md:pl-8">
-                <span className="text-[10px] font-mono font-bold text-[#C4A482] block">// CORE FEATURE 02</span>
+                <span className="text-xs font-semibold tracking-wider font-mono font-bold text-[#C4A482] block">// CORE FEATURE 02</span>
                 <h4 className="font-serif text-lg font-light text-ink">Centralized Local Data Hub</h4>
                 <p className="text-xs text-ink/70 leading-relaxed font-sans">
                   Change text in one single structural file to immediately update times, prices, image sources, list amenities, and packing schedules across the entire public application seamlessly.
@@ -280,7 +280,7 @@ export default function App() {
               </div>
 
               <div className="space-y-3 border-t md:border-t-0 md:border-l border-ink/10 pt-6 md:pt-0 md:pl-8">
-                <span className="text-[10px] font-mono font-bold text-[#5A6455] block">// CORE FEATURE 03</span>
+                <span className="text-xs font-semibold tracking-wider font-mono font-bold text-[#5A6455] block">// CORE FEATURE 03</span>
                 <h4 className="font-serif text-lg font-light text-ink">Fluid Interactive Architecture</h4>
                 <p className="text-xs text-ink/70 leading-relaxed font-sans">
                   Modern micro-animations powered by <code>motion</code>, elegant responsive cards, grayscale-to-color hover imagery, and fluid mobile transitions engineered like a premium printed layout.
@@ -289,7 +289,7 @@ export default function App() {
             </div>
 
             {/* Subtle Setup & Support Note */}
-            <div className="mt-8 pt-6 border-t border-ink/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[10px]">
+            <div className="mt-8 pt-6 border-t border-ink/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs font-semibold tracking-wider">
               <div className="text-ink/60 font-sans tracking-wide">
                 <span className="font-bold text-ink">Setup & Support Guarantee:</span> High-fidelity documentation, editable variables, and direct deployment guides included with purchase.
               </div>
@@ -310,13 +310,13 @@ export default function App() {
               </span>
             </div>
 
-            <div className="text-[10px] uppercase font-sans tracking-[0.2em] text-ink/40 space-y-1">
+            <div className="text-xs font-semibold tracking-wider uppercase font-sans tracking-[0.2em] text-ink/40 space-y-1">
               <p>© 2026 Retreat OS Retreat Details. All rights reserved.</p>
               <p>Designed for premium wellness and movement educators.</p>
             </div>
 
             {/* Subtly integrate facilitation inspector for host checkups */}
-            <div className="flex items-center space-x-3 text-[10px] font-mono tracking-wider">
+            <div className="flex items-center space-x-3 text-xs font-semibold tracking-wider font-mono tracking-wider">
               <button
                 onClick={() => setIsHostDashboardOpen(true)}
                 className="text-[#5A6455] hover:text-ink font-bold bg-[#5A6455]/5 hover:bg-[#5A6455]/10 border border-[#5A6455]/25 px-3 py-1.5 transition cursor-pointer"
@@ -369,7 +369,7 @@ export default function App() {
 
             <form onSubmit={handleAdminUnlock} className="space-y-4">
               <div>
-                <label className="block text-[11px] text-stone-300 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold text-stone-300 uppercase tracking-wider mb-2">
                   Enter Host Access Passkey
                 </label>
                 <input
@@ -382,7 +382,7 @@ export default function App() {
                 />
               </div>
 
-              <div className="p-3 bg-black/40 rounded border border-stone-800 text-[11px]">
+              <div className="p-3 bg-black/40 rounded border border-stone-800 text-xs font-semibold">
                 <div className="text-stone-400 mb-1 flex items-center justify-between">
                   <span>DEMO CHEAT CODE:</span>
                   <span className="text-stone-500">(1-Click Fill)</span>
@@ -393,14 +393,14 @@ export default function App() {
                   className="w-full py-1.5 px-2 bg-[#C4A482]/10 hover:bg-[#C4A482]/20 border border-[#C4A482]/30 rounded text-[#C4A482] font-bold text-left flex items-center justify-between cursor-pointer"
                 >
                   <span>retreat2026</span>
-                  <span className="text-[10px] uppercase underline">AUTO-FILL</span>
+                  <span className="text-xs font-semibold tracking-wider uppercase underline">AUTO-FILL</span>
                 </button>
               </div>
 
               <div className="flex items-center gap-3 pt-2">
                 <button
                   type="submit"
-                  className="flex-1 py-2.5 bg-[#C4A482] hover:bg-[#B39371] text-black font-bold text-xs uppercase tracking-wider rounded-sm transition-colors cursor-pointer"
+                  className="flex-1 py-2.5 bg-[#C4A482] hover:bg-[#B39371] text-black font-bold text-base font-semibold min-h-[44px] uppercase tracking-wider rounded-sm transition-colors cursor-pointer"
                 >
                   Authorize Session
                 </button>
